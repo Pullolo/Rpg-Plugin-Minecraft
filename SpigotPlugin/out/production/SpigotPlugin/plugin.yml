@@ -1,0 +1,38 @@
+name: RpgWAM
+version: 1.3.6
+author: Mikolaj Szlosowski
+main: net.pullolo.Main
+api-version: 1.18
+commands:
+  hi:
+    description: Say hello
+    usage: /<command>
+    aliases: [hello, welcome]
+  bye:
+    description: Say goodbye
+    usage: /<command>
+    aliases: goodbye
+  heal:
+    description: Heals you or a chosen player
+    usage: /<command> <player>
+    aliases: healme
+    permission: rpg.heal
+  sudo:
+    description: You can execute cmd as other players
+    usage: /<command> <player> <args>
+    permission: rpg.sudo
+  giveitem:
+    description: Gives you an item
+    usage: /<command> <player> <itemName/"list">
+    permission: rpg.give
+  set:
+    description: You can set attributes for players
+    usage: /<command> <player> <attribute/"list"> <value>
+    permission: rpg.set
+  mana:
+    description: Shows your current mana
+    usage: /<command>
+  max:
+    description: Maxes items
+    usage: /<command> <itemtype/"list">
+    permission: rpg.max
